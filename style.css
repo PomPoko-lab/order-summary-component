@@ -19,11 +19,17 @@ body {
   flex-direction: column;
 }
 
+@media (max-width: 375) {
+  body {
+    background-image: url("images/pattern-background-mobile.svg");
+  }
+}
+
 main {
   background-color: white;
   display: flex;
   flex-direction: column;
-  width: 365px;
+  width: 360px;
   border-radius: 1em;
 }
 
