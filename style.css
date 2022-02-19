@@ -1,0 +1,136 @@
+* {
+  /* Browser Reset */
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  /* Challenge Styles */
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background-image: url("images/pattern-background-desktop.svg");
+  background-color: hsl(225, 100%, 94%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 365px;
+  border-radius: 1em;
+}
+
+main > img {
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  margin-bottom: 0.5em;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 2.5em;
+  gap: 1em;
+}
+
+h1 {
+  color: hsl(223, 47%, 23%);
+  text-align: center;
+  font-weight: 900;
+}
+
+p {
+  color: hsl(224, 23%, 55%);
+  text-align: center;
+  line-height: 1.5;
+  font-size: 16px;
+  padding: 0 0.5em;
+  font-weight: 500;
+}
+
+div {
+  display: grid;
+  background-color: hsl(225, 100%, 98%);
+  grid-template-areas:
+    "icon plan change"
+    "icon pricing change";
+  border-radius: 0.5em;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+div > img {
+  grid-area: icon;
+  width: 2.5em;
+  height: auto;
+}
+
+div > p.annual-plan {
+  grid-area: plan;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  justify-self: left;
+  font-size: 0.9em;
+}
+
+div > p.plan-pricing {
+  grid-area: pricing;
+  justify-self: left;
+  font-weight: 500;
+  font-size: 0.8em;
+}
+
+div > a.change-plan {
+  grid-area: change;
+  align-self: center;
+  justify-self: center;
+  font-size: 0.9em;
+  font-weight: 900;
+}
+
+div > a.change-plan:hover,
+button.proceed-payment:hover {
+  cursor: pointer;
+  opacity: 70%;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  font-weight: 900;
+}
+
+button.proceed-payment {
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  padding: 1em;
+  border-radius: 0.5em;
+  box-shadow: 0 0.5em 2em rgba(0, 0, 0, 0.3);
+}
+
+button.cancel-order {
+  padding: 1em;
+  color: hsl(224, 23%, 55%);
+}
+
+button.cancel-order:hover {
+  cursor: pointer;
+  color: hsl(223, 47%, 23%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
