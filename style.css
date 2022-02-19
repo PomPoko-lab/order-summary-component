@@ -31,6 +31,7 @@ main {
   flex-direction: column;
   width: 360px;
   border-radius: 1em;
+  box-shadow: 0 0.5em 2em rgba(0, 0, 0, 0.1);
 }
 
 main > img {
