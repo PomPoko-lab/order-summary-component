@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Challenge Results Page](https://www.frontendmentor.io/solutions/order-summary-component-with-flexbox-and-css-grid-rztYHpWFS)
 - Live Site URL: [Challenge DEMO](https://pompoko-lab.github.io/order-summary-component/)
 
 ## My process
